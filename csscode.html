@@ -1,0 +1,255 @@
+<html>
+<head>
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style> 
+        #rcorners1 {
+          border-radius: 25px;
+          background: #a6c778;
+          padding: 60px; 
+          width: auto;
+          height: auto;
+        }
+        a:hover {
+font-size: large;
+font-weight: bolder;
+        }
+        </style>
+  <style>
+    * {
+      box-sizing: border-box;
+    }
+    
+    .header {
+      text-align: center;
+      border: 1px solid rgb(0, 0, 0);
+      padding: 15px;
+    }
+    
+    .menu {
+      width: 25%;
+      float: left;
+      padding: 15px;
+      border: 1px solid rgb(0, 0, 0);
+      background-color: rgb(164, 200, 224);
+    }
+    
+    .main {
+      width: 75%;
+      float: left;
+      padding: 15px;
+      border: 1px solid rgb(0, 0, 0);
+    }
+@media only screen and (max-width:620px) {
+/* For mobile phones: */
+.menu, .main, .right {
+width:100%;
+}
+}
+
+
+footer {
+text-align: center;
+padding: 3px;
+background-color: DarkSalmon;
+color: white;
+display: block;
+}
+    </style>
+<title> Assignment 3 </title>
+<link type="text/css" rel="stylesheet" href="indextry.css" />
+<style>
+img{
+width: 65%;
+float: none;
+}
+td, th {
+  border: 1px solid #ffffff;
+  text-align: left;
+  padding: 8px;
+}
+
+tr:nth-child(even) {
+  background-color: #ffffff;
+}
+</style>
+</head>
+<body style="background-color:rgba(255, 255, 255, 0.63);">
+  <div class="header">
+    <h1 style="color:rgb(0, 0, 0); background-color:rgb(161, 161, 161);">CSS Code for Layout </h1>
+</div>
+<div class="menu">
+<h1 style="color:black">Navigation Links: </h1>
+
+<nav>
+    <li><a href="https://loki.trentu.ca/~rachitgambhir/">Home Page</a></li> 
+    <li><a href="https://loki.trentu.ca/~rachitgambhir/assignment1.html">Assignment 1</a></li> 
+    <li><a href="https://loki.trentu.ca/~rachitgambhir/assignment2.html">Assignment 2</a></li> 
+    <li><a href="https://loki.trentu.ca/~rachitgambhir/assignment3.html">Assignment 3</a></li> 
+    <li><a href="https://loki.trentu.ca/~rachitgambhir/assignment3c.html">Assignment 3 Column Style</a></li> 
+    <li><a href="https://loki.trentu.ca/~rachitgambhir/assignment4.html">Assignment 4</a></li> 
+    <li><a href="https://loki.trentu.ca/~rachitgambhir/assignment5.html">Assignment 5</a></li> 
+    <li><a href="https://loki.trentu.ca/~rachitgambhir/assignment6.html">Assignment 6</a></li> 
+</nav> 
+</div>
+<div class="main">
+    <h1> CSS Code</h1>
+    <code>
+
+* {
+    box-sizing: border-box;
+  }
+  <br>
+  
+  .row::after {<br>
+    content: "";<br>
+    clear: both;<br>        
+    display: table;<br>
+  }
+  <br>
+  [class*="col-"] {<br>
+    float: left;<br>
+    padding: 15px;<br>
+  }
+  <br>
+  .col-1 {width: 8.33%;}<br>
+  .col-2 {width: 16.66%;}<br>
+  .col-3 {width: 25%;}<br>
+  .col-4 {width: 33.33%;}<br>
+  .col-5 {width: 41.66%;}<br>
+  .col-6 {width: 50%;}<br>
+  .col-7 {width: 58.33%;}<br>
+  .col-8 {width: 66.66%;}<br>
+  .col-9 {width: 75%;}<br>
+  .col-10 {width: 83.33%;}<br>
+  .col-11 {width: 91.66%;}<br>
+  .col-12 {width: 100%;}
+  <br>
+  html {<br>
+    font-family: "Lucida Sans", sans-serif;<br>
+  }
+  <br>
+  li {<br>
+    text-decoration-line: underline;<br>
+  }<br>
+  h1 {<br>
+    text-transform: capitalize;<br>
+    font-family: cursive;<br>
+    font-style: normal;<br>
+  }<br>
+  h2 {<br>
+    text-transform: capitalize;<br>
+    font-family: cursive;<br>
+    font-style: normal;<br>
+  }<br>
+  h3 {<br>
+    text-transform: capitalize;<br>
+    font-family: cursive;<br>
+    font-style: normal;<br>
+  }<br>
+  p {<br>
+      font-size: 1.3rem;<br>
+      font-family: 'Times New Roman', Times, serif;<br>
+      border-radius: 1px;<br>
+  }<br>
+  
+  abbr {<br>
+      font-style: italic;<br>
+      font-weight: 100;<br>
+      text-decoration: underline overline wavy blue;<br>
+  }<br>
+  
+  .header {<br>
+    background-color: rgb(251, 255, 0);<br>
+    color: #ffffff;<br>
+    padding: 15px;<br>
+  }<br>
+  
+  .menu ul {<br>
+    list-style-type: none;<br>
+    margin: 0;<br>
+    padding: 0;<br>
+  }<br>
+  
+  .menu li {<br>
+    padding: 8px;<br>
+    margin-bottom: 7px;<br>
+    background-color: #33b5e5;<br>
+    color: #ffffff;<br>
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);<br>
+  }<br>
+  
+  .menu li:hover {<br>
+    background-color: #0099cc;<br>
+  }<br>
+  
+  footer {<br>
+      text-align: center;<br>
+      padding: 3px;<br>
+      background-color: DarkSalmon;<br>
+      color: white;<br>
+    }<br>
+  
+    tr {<br>
+      background-color: aqua;<br>
+    }<br>
+    </code>
+    <p id="rcorners1">
+        Index page and all assignment pages up till now were all edited and made better looking
+    </p>
+        <p id="rcorners1">
+            * {
+                box-sizing: border-box;
+              }
+              <br>
+              Was used to make sure html has borders
+</p>
+
+<p id="rcorners1">
+    Responsive Web Design was created by making a grid view dividing the page into 12 columns
+</p>
+<p id="rcorners1">
+
+    HTML, list, paragragraphs, header, etc everything was given a font type, family, kind and other properties
+</p>
+<p id="rcorners1">
+    Text-decoration-line was used to give headers, titles and list caplitalizaition. That means initials of every word will be auto capitalized
+</p>
+<p id="rcorners1">
+    Acroynm and abbr also had difference text decorations and capitalization
+</p>
+<p id="rcorners1">
+    A footer was created in CSS for all pages to display Trent University Home Page
+</p>
+
+
+
+
+    <figcaption> CSS code </figcaption>
+    </figure>
+<p id="rcorners1">
+    #rcorners1 <br> Was used to make the paragraphs have round edges
+</p>
+<p id="rcorners1">
+    The page was divided into header, menu and main. Header contains the name/title. Menu contains the navigation links and main contains the assignment content
+</p>
+<p id="rcorners1">
+    Footer was added to to html. the customisation was done in CSS
+</p>
+<p id="rcorners1">
+    Blockquotes were used to give the text a light background color
+</p>
+<p id="rcorners1">
+    By used text-transform: uppercase, headers were capitalized
+</p>
+<p id="rcorners1">
+    Strong, emphasis, italics, table, acroynm, abbr, cite and other CSS properties were used
+</p>
+
+<footer>
+  <p>              © All right reserved.   Trent University   <br>  Instagram @Trentuniversity       
+  <a href="www.trentu.ca">www.trentu.ca</a></p>
+  </footer>
+  </div>
+</body>
+</html>
+
